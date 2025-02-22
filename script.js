@@ -1,17 +1,16 @@
 document.querySelector('.download-btn').addEventListener('click', function () {
-    // Select the CV container to convert to PDF
     const cvElement = document.querySelector('.cv-container');
 
     // PDF Options
     const options = {
-        margin: 10,
+        margin: [5, 5, 5, 5],  // Reduce margins
         filename: 'Gopal_Nepal_CV.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2 },
+        image: { type: 'jpeg', quality: 1 },
+        html2canvas: { scale: 1.2 },  // Adjust scale for better fit
         jsPDF: { format: 'a4', orientation: 'portrait' }
     };
 
-    // Convert and Download PDF
+    // Generate PDF
     html2pdf().from(cvElement).set(options).save();
 });
 
