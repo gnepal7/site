@@ -3,131 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gopal Nepal - UX/UI Designer</title>
+    <title>Gopal Nepal: UX/UI Designer</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-
-  <style>
-    /* Global Styles */
-      body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-          color: #333;
-          background-color: #f4f4f4;
-      }
-      
-      .container {
-          width: 80%;
-          margin: 0 auto;
-          text-align: center;
-      }
-      
-      /* Header */
-      header {
-          background: #2c3e50;
-          color: white;
-          padding: 20px;
-      }
-      
-      h1 {
-          margin: 0;
-      }
-      
-      h2 {
-          color: #2c3e50;
-      }
-      
-      /* Sections */
-      section {
-          padding-top: 50px;
-          line-height:2;
-      }
-      ul{
-            display:inline-block;  
-        }
-      #experience ul,
-      #education ul{
-            text-align:left;
-        }
-      .skills-list {
-          list-style: none;
-          padding: 0;
-      }
-      
-      .skills-list li {
-          display: inline-block;
-          margin: 10px;
-          padding: 10px;
-          background: #3498db;
-          color: white;
-          border-radius: 5px;
-      }
-      
-      /* Footer */
-      footer {
-          background: #2c3e50;
-          color: white;
-          text-align: center;
-          padding: 20px;
-          margin-top: 20px;
-      }
-
-  </style>
-
-
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <div class="container">
+    <!-- CV Container -->
+    <div class="cv-container">
+
+        <!-- Left Column -->
+        <div class="cv-sidebar">
+            <img src="images/profile.jpg" alt="Gopal Nepal">
             <h1>Gopal Nepal</h1>
-            <p>Experienced UX/UI Designer & Web Developer</p>
-        </div>
-    </header>
+            <p class="tagline">UX/UI Designer & Web Developer</p>
 
-    <!-- ABOUT -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>With over 8 years of experience in UX/UI design, I specialize in creating beautiful and functional websites using HTML5, CSS3, SASS, JavaScript, and WordPress. I also have experience in audio/video editing and web backend development.</p>
-        </div>
-    </section>
+            <h2>Contact</h2>
+            <p><i class="fas fa-envelope"></i> gopalnep@gmail.com</p>
+            <p><i class="fas fa-phone"></i> 9841917240</p>
+            <p><i class="fas fa-map-marker-alt"></i> Mid Baneswor, KTM</p>
 
-    <!-- SKILLS -->
-    <section id="skills">
-        <div class="container">
             <h2>Skills</h2>
             <ul class="skills-list">
-                <li>HTML5</li>
-                <li>CSS3 & SASS</li>
-                <li>JavaScript & jQuery</li>
-                <li>Bootstrap</li>
-                <li>WordPress</li>
-                <li>Adobe Photoshop & Illustrator</li>
-                <li>Figma & Adobe XD</li>
-                <li>Git & Version Control</li>
+                <li>HTML5, CSS3, SASS</li>
+                <li>JavaScript, jQuery</li>
+                <li>Bootstrap, WordPress</li>
+                <li>Photoshop, Illustrator, XD, Figma</li>
+                <li>Git, Version Control</li>
+                <li>Audio/Video Editing</li>
             </ul>
+            
+            <button class="download-btn">Download CV</button>
         </div>
-    </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience">
-        <div class="container">
-            <h2>Experience</h2>
+        <!-- Right Column -->
+        <div class="cv-content">
+            <h2>About Me</h2>
+            <p>With over **8 years of experience** in UX/UI design and front-end development, I specialize in creating **modern, user-friendly websites**. My expertise includes web design, WordPress, HTML, CSS, JavaScript, and creative tools like Photoshop and Figma.</p>
+
+            <h2>Work Experience</h2>
             <ul>
                 <li><strong>Senior UX/UI Designer</strong> - I-Tech Nepal (2023 - Present)</li>
                 <li><strong>Senior UX/UI Designer</strong> - Media Chautari (2021 - 2022)</li>
                 <li><strong>Web Designer</strong> - Manaram Technology (2015 - 2021)</li>
                 <li><strong>Reporter & Technician</strong> - Radio Nepal (2016 - Present)</li>
             </ul>
-        </div>
-    </section>
 
-    <!-- EDUCATION -->
-    <section id="education">
-        <div class="container">
             <h2>Education</h2>
             <ul>
                 <li><strong>MSc in IT Management</strong> - APU (Ongoing)</li>
@@ -135,36 +57,8 @@
                 <li><strong>BA in Sociology/Anthropology</strong> - Ratna Rajya Laxmi Campus</li>
             </ul>
         </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:gopalnep@gmail.com">gopalnep@gmail.com</a></p>
-            <p>Phone: 9841917240</p>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2025 Gopal Nepal. All Rights Reserved.</p>
-    </footer>
-
-  <script>
-      document.addEventListener("DOMContentLoaded", function () {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-          anchor.addEventListener("click", function (e) {
-              e.preventDefault();
-              const target = document.querySelector(this.getAttribute("href"));
-              if (target) {
-                  target.scrollIntoView({ behavior: "smooth" });
-              }
-          });
-      });
-  });
-
-  </script>
+    </div>
 
 </body>
 </html>
